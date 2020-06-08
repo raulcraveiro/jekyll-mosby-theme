@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <p class="copyright">{{ site.title }} &copy; {{ site.time | date: '%Y' }}</p>
+</footer>
+
+<!-- Script for the navbar -->
+<script async>
+function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+<!-- Responsive video -->
+<script src="/assets/js/fluidvids.js" async></script>
+
+<!-- Analytics -->
+{% include analytics.html %}

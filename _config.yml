@@ -1,0 +1,98 @@
+# Site settings
+title: "Craveiro"
+description: "Dando opiniões que ninguém pediu"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://craveiro.me" # the base hostname & protocol for your site
+logo: "/assets/images/theme/logo.png"
+image: "/assets/images/theme/blog-cover.jpg"
+lang: pt_BR
+favicon: "/assets/images/theme/favicon.png"
+analytics: "UA-98760332-1"
+version: "3.8.5"
+
+# Author settings
+author:
+  name: "Raul Craveiro"
+  email: "raul@craveiro.me"
+  description: "Adoro passar vergonha na internet."
+  twitter: raulcraveiro
+  picture: "/assets/images/theme/raul.jpg"
+
+# Social settings
+twitter_username: raulcraveiro
+youtube_username: raulcraveiro
+instagram_username: raulcraveiro
+googleplus_username: raulcraveiro
+linkedin_username: raulcraveiro
+pinterest_username: raulcraveiro
+
+# Twitter Cards
+twitter:
+  username: raulcraveiro
+  card: summary_large_image
+
+# Webmasters Settings
+webmaster:
+  google:
+  bing:
+  yandex:
+
+# Mailchimp Settings
+mailchimp_link: "https://craveiro.us5.list-manage.com/subscribe/post?u=6e8f08436ccb1b997b0c622f0&amp;id=50f16a5873"
+
+# Collections settings
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:name
+  poemas:
+    output: true
+    permalink: /poemas/:name
+
+
+# Build settings
+markdown: kramdown
+permalink: ":title/"
+highlighter: rouge
+
+# Pagination
+paginate: 5
+paginate_path: "page/:num/"
+
+# Minification
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Defaults Settings
+
+defaults:
+  # Posts
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      author: raulcraveiro
+  # Portfolio
+  - scope:
+      path: "_portfolio"
+      type: "portfolio"
+    values:
+      layout: post
+  # Poemas
+  - scope:
+      path: "_poemas"
+      type: "poemas"
+    values:
+      layout: post
+  # Pages
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: page

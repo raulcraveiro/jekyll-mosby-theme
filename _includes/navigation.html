@@ -1,0 +1,8 @@
+<header class="header-container" id="header-container">
+  <nav class="navbar" id="myNavbar">
+    {% for navigation in site.data.navigation %}
+      <a href="{{ navigation.url }}">{{ navigation.title }}</a>
+    {% endfor %}
+    <a href="javascript:void(0);" class="icon navicon" onclick="myFunction()" title="Menu">{% include svg/menu.svg %}</a>
+  </nav>
+</header>

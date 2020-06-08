@@ -1,0 +1,18 @@
+<!-- Social icons -->
+<nav class="social-icon">
+    {% if site.twitter_username %}
+        <a class="page-link" href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="icon twitter">{% include svg/twitter.svg %}</span>
+        </a>
+    {% endif %}
+    {% if site.youtube_username %}
+        <a class="page-link" href="https://youtube.com/{{ site.youtube_username }}">
+            <span class="icon youtube">{% include svg/youtube.svg %}</span>
+        </a>
+    {% endif %}
+    {% if site.instagram_username %}
+        <a class="page-link" href="https://instagram.com/{{ site.instagram_username }}">
+            <span class="icon instagram">{% include svg/instagram.svg %}</span>
+        </a>
+    {% endif %}
+</nav>

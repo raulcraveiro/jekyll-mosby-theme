@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{% include date.html %} {% if page.category %} • {{ page.category | capitalize }} {% endif %}</p>
+    {% if page.image %}
+      <img src="{{ page.image.path }}" alt="{{ page.image.alt }}" />
+    {% endif %}
+  </header>
+
+  <main class="post-content">
+    {{ content }}
+
+    <p>
+      <a href="http://twitter.com/share?url={{ site.url }}{{ page.permalink }}&via=raulcraveiro">Comente no Twitter</a>
+      •
+      <a href="https://twitter.com/search?q={{ site.url }}{{ page.permalink }}">Visualizar comentários</a>
+    </p>
+  </main>
+
+</article>
+
+{% if site.mailchimp_link %}
+<hr />
+  <section class="newsletter">
+    <p>Inscreva-se na newsletter para receber todas as novidades do blog diretamente no seu e-mail. Mas eu prometo que você não irá receber mais do que um e-mail por semana. 🙏</p>
+    <form action="{{ site.mailchimp_link }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <input type="email" value="" name="EMAIL" placeholder="E-mail" required>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6e8f08436ccb1b997b0c622f0_50f16a5873" tabindex="-1" value=""></div>
+      <input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe">
+    </form>
+  </section>
+{% endif %}
+
+  {% unless page.category == null %}
+    {% capture pageCategory %}{{ page.category }}{% endcapture %}
+    {% unless site.categories[pageCategory].size == 1 %}
+      <hr />
+      <section class="related">
+        <h2>Posts relacionados</h2>
+          {% for post in site.categories[pageCategory] limit:4 %}
+            {% unless post.title == page.title %}
+             <h3>
+              <a href="{{ post.url }}">
+                {{ post.title }}
+              </a>
+             </h3>
+            {% endunless %}
+          {% endfor %}
+      </section>
+    {% endunless %}
+  {% endunless %}
