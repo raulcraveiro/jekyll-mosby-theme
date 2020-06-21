@@ -52,6 +52,12 @@ markdown: kramdown
 permalink: ":title/"
 highlighter: rouge
 
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
 # Pagination
 paginate: 5
 paginate_path: "page/:num/"
