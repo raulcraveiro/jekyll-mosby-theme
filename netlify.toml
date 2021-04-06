@@ -34,10 +34,4 @@
 
 ## Plugins
 
-[[plugins]]
-  package = "netlify-plugin-jekyll-cache"
-  
-  [plugins.inputs]
-    # This is only required if you have defined a source directory in Jekyll
-    # At some point this will become automated, but for now it must be specified 
-    jekyllSource = ""
+#[[plugins]]
