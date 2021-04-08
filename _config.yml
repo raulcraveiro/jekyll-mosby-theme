@@ -40,13 +40,6 @@ webmaster:
 # Mailchimp Settings
 mailchimp_link: ""
 
-# Collections settings
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:name
-
-
 # Build settings
 markdown: kramdown
 permalink: ":title/"
@@ -74,12 +67,6 @@ defaults:
     values:
       layout: post
       author: raulcraveiro
-  # Portfolio
-  - scope:
-      path: "_portfolio"
-      type: "portfolio"
-    values:
-      layout: post
   # Pages
   - scope:
       path: "pages"
