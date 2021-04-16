@@ -1,8 +1,0 @@
-# Configuration needed for jekyll_picture_tag work properly
-markup_presets:
-  default:
-    markup: auto
-    formats: [original]
-    widths: [200, 400, 800]
-    fallback_width: 800
-    fallback_format: original

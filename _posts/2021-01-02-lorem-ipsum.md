@@ -4,8 +4,8 @@ description: "Ut fringilla lectus eu metus porttitor, vitae sollicitudin ipsum r
 permalink: /lorem-ipsum
 category: tecnologia
 image:
-  path: /2015/07/nuvem.jpg
-  alt:
+  path: /assets/images/writing.jpg
+  alt: "Uma mão escrevendo em um papel com uma lapiseira"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu dictum ex. Nam bibendum odio leo, imperdiet laoreet erat sagittis at. Donec id feugiat orci. Sed quis metus quis ipsum faucibus sodales. Nunc sed lacus tincidunt, luctus urna a, dictum dolor. Aliquam ac pharetra quam. Nulla vulputate venenatis nulla, ut porta orci fermentum ac. Quisque tristique dictum consectetur. Proin felis dolor, condimentum nec bibendum sit amet, varius et dui.
