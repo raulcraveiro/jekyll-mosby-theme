@@ -2,7 +2,7 @@
 title: "Mosby"
 description: "Just a simple writing theme."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://craveiro.me" # the base hostname & protocol for your site
+url: "https://craveiro.com.br/mosby" # the base hostname & protocol for your site
 logo: "/assets/images/theme/logo.png"
 image: "/assets/images/theme/blog-cover.jpg"
 lang: pt_BR # The language that your posts are written
@@ -16,13 +16,12 @@ author:
   email: "tedmosby@himym.com"
   description: "Just a guy looking for his soulmate."
   twitter: tedmosby
-  picture: "/assets/images/theme/raul.jpg"
+  picture: "/assets/images/theme/avatar.jpg"
 
 # Social settings
 twitter_username: raulcraveiro
 youtube_username: raulcraveiro
 instagram_username: raulcraveiro
-googleplus_username: raulcraveiro
 linkedin_username: raulcraveiro
 pinterest_username: raulcraveiro
 
