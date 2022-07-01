@@ -2,7 +2,7 @@
 title: "Mosby" #Título do site
 description: "Just a simple writing theme." #Descrição do site
 baseurl: "" # Base do seu blog. Deixe em branco se quiser que o seu blog fique no domínio raiz.
-url: "https://jekyll-mosby-theme.netlify.app/" # URL do seu site
+url: "https://jekyll-mosby-theme.netlify.app" # URL do seu site
 logo: "/assets/images/theme/logo.png" # Logo
 image: "/assets/images/theme/blog-cover.png" # Imagem de capa (utilizada em compartilhamento para redes sociais)
 lang: pt_BR # Linguagem que seus posts serão escritos
