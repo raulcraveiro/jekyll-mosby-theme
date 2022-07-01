@@ -1,43 +1,39 @@
-# Site settings
-title: "Mosby"
-description: "Just a simple writing theme."
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://craveiro.com.br/mosby" # the base hostname & protocol for your site
-logo: "/assets/images/theme/logo.png"
-image: "/assets/images/theme/blog-cover.jpg"
-lang: pt_BR # The language that your posts are written
-favicon: "/assets/images/theme/favicon.png"
-analytics: ""
+# Configurações do site
+title: "Mosby" #Título do site
+description: "Just a simple writing theme." #Descrição do site
+baseurl: "" # Base do seu blog. Deixe em branco se quiser que o seu blog fique no domínio raiz.
+url: "https://jekyll-mosby-theme.netlify.app/" # URL do seu site
+logo: "/assets/images/theme/logo.png" # Logo
+image: "/assets/images/theme/blog-cover.png" # Imagem de capa (utilizada em compartilhamento para redes sociais)
+lang: pt_BR # Linguagem que seus posts serão escritos
+favicon: "/assets/images/theme/favicon.png" #Favicon do seu site
 version: "4.1.0"
 
-# Author settings
+# Configurações do autor
 author:
-  name: "Ted Mosby"
-  email: "tedmosby@himym.com"
-  description: "Just a guy looking for his soulmate."
-  twitter: tedmosby
-  picture: "/assets/images/theme/avatar.jpg"
+  name: "Ted Mosby" # Nome do autor
+  email: "tedmosby@himym.com" # E-mail do autor
+  description: "Just a guy looking for his soulmate." # Descrição do autor
+  twitter: tedmosby # Usuário do Twitter do autor
+  picture: "/assets/images/theme/avatar.jpg" # Imagem do autor
 
-# Social settings
-twitter_username: raulcraveiro
-youtube_username: raulcraveiro
-instagram_username: raulcraveiro
-linkedin_username: raulcraveiro
-pinterest_username: raulcraveiro
+# Configurações de redes sociais
+twitter_username: raulcraveiro # Usuário do Twitter
+youtube_username: raulcraveiro # Usuário do YouTube
+instagram_username: raulcraveiro # Usuário do Instagram
+linkedin_username: raulcraveiro # Usuário do LinkedIn
+pinterest_username: raulcraveiro # Usuário do Pinterest
 
 # Twitter Cards
 twitter:
-  username: raulcraveiro
+  username: raulcraveiro # Usuário do Twitter
   card: summary_large_image
 
-# Webmasters Settings
+# Configurações de webmaster
 webmaster:
   google:
   bing:
   yandex:
-
-# Mailchimp Settings
-mailchimp_link: ""
 
 # Build settings
 markdown: kramdown
