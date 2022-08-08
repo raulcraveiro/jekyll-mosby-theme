@@ -23,22 +23,3 @@ layout: default
   </main>
 
 </article>
-
-  {% unless page.category == null %}
-    {% capture pageCategory %}{{ page.category }}{% endcapture %}
-    {% unless site.categories[pageCategory].size == 1 %}
-      <hr />
-      <section class="related">
-        <h2>Posts relacionados</h2>
-          {% for post in site.categories[pageCategory] limit:4 %}
-            {% unless post.title == page.title %}
-             <h3>
-              <a href="{{ post.url }}">
-                {{ post.title }}
-              </a>
-             </h3>
-            {% endunless %}
-          {% endfor %}
-      </section>
-    {% endunless %}
-  {% endunless %}
